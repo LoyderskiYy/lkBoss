@@ -1,0 +1,210 @@
+settings:
+  spawn-delay: 7200 # Кулдаун спавна
+  curse-effect: BLINDNESS # Эффект слепоты
+  curse-duration: 35 # Радиус проклятия
+  curse-amplifier: 1 #
+  curse-interval: 60 # Интервал наложения проклятия default: 1m
+  curse-sound: "ENTITY_BEE_DEATH" # Звук при наложении эффекта
+  spawn-sound: ENTITY_ENDER_DRAGON_GROWL # Sound при спавне босса
+  kill-sound: UI_TOAST_CHALLENGE_COMPLETE # Sound при убийстве босса
+  top-players: 3
+  boss-damage-multiplier: 3.0 # Множитель урона от босса
+  location-attempts: 10
+  location-range: 400
+  location-offset: 200
+
+bosses-special-location-id: 4
+special-location:
+  x: 100
+  y: 80
+  z: 100
+
+# Конфигурация боссов
+bosses:
+  1:
+    world: world_the_end
+    name: "&x&7&C&3&4&9&4Э&x&7&B&3&2&9&Cн&x&7&A&3&0&A&4д&x&7&8&2&E&A&Cе&x&7&7&2&C&B&4р&x&7&6&2&A&B&Cм&x&7&5&2&8&C&4и&x&7&3&2&5&C&Bч&x&7&2&2&3&D&3е&x&7&1&2&1&D&Bс&x&7&0&1&F&E&3к&x&6&E&1&D&E&Bи&x&6&D&1&B&F&3й &x&6&B&1&B&E&EР&x&6&9&1&A&E&Bа&x&6&8&1&A&E&8з&x&6&7&1&A&E&5р&x&6&6&1&A&E&3у&x&6&4&1&9&E&0ш&x&6&3&1&9&D&Dи&x&6&2&1&9&D&Aт&x&6&1&1&9&D&8е&x&5&F&1&8&D&5л&x&5&E&1&8&D&2ь"
+    entity-type: ENDERMAN
+    bar-color: PURPLE
+    max-health: 200.0
+    phases:
+      phase1:
+        health-range: "0.75-1.0"
+        effects: [ ]
+      phase2:
+        health-range: "0.5-0.75"
+        effects:
+          - "SPEED:1:99999"
+        spawn-minions:
+          type: "SKELETON"
+          count: 2
+          interval: 25
+      phase3:
+        health-range: "0.25-0.5"
+        aoe-damage:
+          type: "POISON"
+          radius: 4
+          interval: 20
+      phase4:
+        health-range: "0.0-0.25"
+        effects:
+          - "SPEED:2:99999"
+        armor-reduction: 0.5
+  2:
+    world: world_nether
+    name: "&x&E&7&5&9&1&4П&x&E&8&5&C&1&5ы&x&E&9&5&E&1&5л&x&E&B&6&1&1&6а&x&E&C&6&3&1&7ю&x&E&D&6&6&1&8щ&x&E&E&6&9&1&8и&x&E&F&6&B&1&9й &x&F&2&7&0&1&AВ&x&F&3&7&3&1&Bл&x&F&0&7&4&1&Bа&x&E&C&7&4&1&Aд&x&E&9&7&5&1&Aы&x&E&6&7&6&1&Aк&x&E&3&7&7&1&Aа &x&D&C&7&8&1&9Н&x&D&9&7&9&1&9е&x&D&5&7&9&1&8д&x&D&2&7&A&1&8р"
+    entity-type: BLAZE
+    bar-color: RED
+    max-health: 200.0
+    phases:
+      phase1:
+        health-range: "0.75-1.0"
+        effects: [ ]
+      phase2:
+        health-range: "0.5-0.75"
+        effects:
+          - "SPEED:1:99999"
+        spawn-minions:
+          type: "SKELETON"
+          count: 2
+          interval: 25
+      phase3:
+        health-range: "0.25-0.5"
+        aoe-damage:
+          type: "POISON"
+          radius: 4
+          interval: 20
+      phase4:
+        health-range: "0.0-0.25"
+        effects:
+          - "SPEED:2:99999"
+        armor-reduction: 0.5
+  3:
+    world: world
+    name: "&x&B&3&9&B&8&FТ&x&B&5&9&D&9&0и&x&B&7&9&E&9&1т&x&B&9&A&0&9&2а&x&B&B&A&2&9&3н &x&B&F&A&5&9&4П&x&C&1&A&6&9&5о&x&C&3&A&8&9&6в&x&C&1&A&6&9&5е&x&B&F&A&5&9&4р&x&B&D&A&3&9&3х&x&B&B&A&2&9&3н&x&B&9&A&0&9&2о&x&B&7&9&E&9&1с&x&B&5&9&D&9&0т&x&B&3&9&B&8&Fи"
+    entity-type: IRON_GOLEM
+    bar-color: BLUE
+    max-health: 200.0
+    phases:
+      phase1:
+        health-range: "0.75-1.0"
+        effects: [ ]
+      phase2:
+        health-range: "0.5-0.75"
+        effects:
+          - "SPEED:1:99999"
+        spawn-minions:
+          type: "SKELETON"
+          count: 2
+          interval: 25
+      phase3:
+        health-range: "0.25-0.5"
+        aoe-damage:
+          type: "POISON"
+          radius: 4
+          interval: 20
+      phase4:
+        health-range: "0.0-0.25"
+        effects:
+          - "SPEED:2:99999"
+        armor-reduction: 0.5
+  4:
+    world: world
+    name: "&x&4&E&4&2&4&2У&x&5&2&4&7&4&7г&x&5&6&4&B&4&Bо&x&5&A&5&0&5&0л&x&5&E&5&5&5&5ь&x&6&2&5&9&5&9н&x&6&6&5&E&5&Eы&x&6&A&6&3&6&3й &x&7&2&6&C&6&CИ&x&6&E&6&7&6&7м&x&6&9&6&2&6&2п&x&6&5&5&C&5&Cе&x&6&0&5&7&5&7р&x&5&C&5&2&5&2а&x&5&7&4&D&4&Dт&x&5&3&4&7&4&7о&x&4&E&4&2&4&2р"
+    entity-type: WITHER_SKELETON
+    bar-color: GREEN
+    max-health: 200.0
+    phases:
+      phase1:
+        health-range: "0.75-1.0"
+        effects: [ ]
+      phase2:
+        health-range: "0.5-0.75"
+        effects:
+          - "SPEED:1:99999"
+        spawn-minions:
+          type: "SKELETON"
+          count: 2
+          interval: 25
+      phase3:
+        health-range: "0.25-0.5"
+        aoe-damage:
+          type: "POISON"
+          radius: 4
+          interval: 20
+      phase4:
+        health-range: "0.0-0.25"
+        effects:
+          - "SPEED:2:99999"
+        armor-reduction: 0.5
+
+# Топ по урону
+rewards:
+  top1: "give %player% diamond 5"
+  top2: "give %player% diamond 3"
+  top3: "give %player% diamond 1"
+
+# Сообщения
+messages:
+  boss-exists: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&D &cБосс уже существует, новый спавн отменён."
+  boss-alive: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DНельзя заспавнить нового босса - предыдущий всё ещё жив."
+  boss-bar-title: "%boss_name% &6на координатах: &x&A&C&5&6&1&1%x%, %y%, %z%"
+  boss-spawn:
+    - "&x&A&C&5&6&1&1&l[&x&A&E&5&9&1&5&l3&x&B&0&5&D&1&8&lА&x&B&2&6&0&1&C&lП&x&B&4&6&4&1&F&lУ&x&B&6&6&7&2&3&lЩ&x&B&7&6&A&2&6&lЕ&x&B&9&6&E&2&A&lН &x&B&D&7&5&3&1&lИ&x&B&F&7&8&3&4&lВ&x&B&C&7&6&3&0&lЕ&x&B&A&7&4&2&B&lН&x&B&7&7&1&2&7&lТ &x&B&2&6&D&1&E&lБ&x&A&F&6&B&1&9&lО&x&A&C&6&8&1&5&lС&x&A&A&6&6&1&0&lС&x&A&7&6&4&0&C&l]"
+    - ""
+    - "&x&9&F&4&0&1&2&l▕  &fБосс %boss_name% &7(%hp%❤) &fпробудился!"
+    - "&x&9&F&4&0&1&2&l▕  &fЕго место-положение: &6%x%&7, &6%y%&7, &6%z%&f."
+    - "&x&9&F&4&0&1&2&l▕  &fМир в котором он пробудился: &7%world%"
+    - "&x&9&F&4&0&1&2&l▕  &fОтслеживать информацию - &c/lkboss info"
+    - ""
+    - "&x&F&3&6&D&6&DУбейте его, чтобы получить награду!"
+    - "&x&A&6&B&1&A&B(&x&A&6&B&1&A&BН&x&A&6&B&1&A&Bа&x&A&6&B&1&A&Bг&x&A&6&B&1&A&Bр&x&A&6&B&1&A&Bа&x&A&6&B&1&A&Bд&x&A&6&B&1&A&Bа &x&A&6&B&1&A&Bв&x&A&6&B&1&A&Bы&x&A&6&B&1&A&Bд&x&A&6&B&1&A&Bа&x&A&6&B&1&A&Bё&x&A&6&B&1&A&Bт&x&A&6&B&1&A&Bс&x&A&6&B&1&A&Bя &x&A&6&B&1&A&BТ&x&A&6&B&1&A&BО&x&A&6&B&1&A&BП&x&A&6&B&1&A&B-&x&A&6&B&1&A&B3 &x&A&6&B&1&A&Bи&x&A&6&B&1&A&Bг&x&A&6&B&1&A&Bр&x&A&6&B&1&A&Bо&x&A&6&B&1&A&Bк&x&A&6&B&1&A&Bа&x&A&6&B&1&A&Bм &x&A&6&B&1&A&Bп&x&A&6&B&1&A&Bо &x&A&6&B&1&A&Bу&x&A&6&B&1&A&Bр&x&A&6&B&1&A&Bо&x&A&6&B&1&A&Bн&x&A&6&B&1&A&Bу&x&A&6&B&1&A&B)"
+  boss-moved: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &6Босс %boss_name% &6перемещён на новые координаты: &e%x% %y% %z%"
+  curse-message: "&8[&4Проклятие&8] &7Вы ослеплены силой босса!"
+  boss-killed:
+    - "&x&5&E&E&2&9&7&l[&x&5&D&E&2&9&0&l3&x&5&C&E&3&8&9&lА&x&5&B&E&3&8&2&lК&x&5&A&E&3&7&B&lО&x&5&9&E&4&7&5&lН&x&5&8&E&4&6&E&lЧ&x&5&7&E&4&6&7&lЕ&x&5&6&E&4&6&0&lН &x&5&4&E&5&5&2&lИ&x&5&5&E&5&5&9&lВ&x&5&6&E&4&6&0&lЕ&x&5&7&E&4&6&7&lН&x&5&8&E&4&6&E&lТ &x&5&A&E&3&7&B&lБ&x&5&B&E&3&8&2&lО&x&5&C&E&3&8&9&lС&x&5&D&E&2&9&0&lС&x&5&E&E&2&9&7&l]"
+    - ""
+    - "&x&9&F&4&0&1&2&l▕  &fБосс %boss_name% &fбыл повержен!"
+    - "&x&9&F&4&0&1&2&l▕  &fСледующий спавн - &c/lkboss delay"
+    - ""
+    - "&6Топ по урону:"
+    - "&x&C&F&A&C&4&E%position% Место: &a%player% &f(&x&F&3&6&D&6&D%damage% урона&f)"
+    - "&x&A&6&B&1&A&B(&x&A&6&B&1&A&BИ&x&A&6&B&1&A&Bг&x&A&6&B&1&A&Bр&x&A&6&B&1&A&Bо&x&A&6&B&1&A&Bк&x&A&6&B&1&A&Bи &x&A&6&B&1&A&Bс &x&A&6&B&1&A&BТ&x&A&6&B&1&A&BО&x&A&6&B&1&A&BП&x&A&6&B&1&A&BА &x&A&6&B&1&A&Bп&x&A&6&B&1&A&Bо&x&A&6&B&1&A&Bл&x&A&6&B&1&A&Bу&x&A&6&B&1&A&Bч&x&A&6&B&1&A&Bи&x&A&6&B&1&A&Bл&x&A&6&B&1&A&Bи &x&A&6&B&1&A&Bс&x&A&6&B&1&A&Bв&x&A&6&B&1&A&Bо&x&A&6&B&1&A&Bю &x&A&6&B&1&A&Bн&x&A&6&B&1&A&Bа&x&A&6&B&1&A&Bг&x&A&6&B&1&A&Bр&x&A&6&B&1&A&Bа&x&A&6&B&1&A&Bд&x&A&6&B&1&A&Bу&x&A&6&B&1&A&B)"
+  no-permission: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DУ вас нет прав на использование этой команды!"
+  help:
+    - "&x&A&C&5&6&1&1&l[&x&A&E&5&9&1&4&ll&x&A&F&5&C&1&7&lk&x&B&1&5&F&1&B&lB&x&B&3&6&2&1&E&lo&x&B&5&6&5&2&1&ls&x&B&6&6&9&2&4&ls &x&B&A&6&F&2&A&l- &x&B&D&7&5&3&1&l@&x&B&F&7&8&3&4&lo&x&B&D&7&6&3&0&lv&x&B&A&7&4&2&C&lh&x&B&8&7&2&2&8&l_&x&B&5&7&0&2&4&ll&x&B&3&6&E&2&0&lo&x&B&1&6&C&1&C&ly&x&A&E&6&A&1&8&ld&x&A&C&6&8&1&4&le&x&A&9&6&6&1&0&lr&x&A&7&6&4&0&C&l]"
+    - ""
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss delay &f- показать таймер"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss spawn random &f- заспавнить рандомного босса"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss spawn 1|2|3|4 &f- заспавнить определенного босса"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss kill &f- убить текущего босса"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss teleport &f- телепортироваться к боссу"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss info &f- информация о боссе"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss reload &f- перезагрузка config.yml"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss top &f- топ урона по текущему боссу"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss leaderboard &f- глобальный топ по боссам"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss stats &f- глобальная статистика персонажа"
+  reload-success: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&A&7&E&A&B&1Конфигурация успешно перезагружена!"
+  info:
+    - "&x&9&F&6&7&1&2&l[&x&9&F&6&7&1&2&lИ&x&9&F&6&7&1&2&lН&x&9&F&6&7&1&2&lФ&x&9&F&6&7&1&2&lО&x&9&F&6&7&1&2&lР&x&9&F&6&7&1&2&lМ&x&9&F&6&7&1&2&lА&x&9&F&6&7&1&2&lЦ&x&9&F&6&7&1&2&lИ&x&9&F&6&7&1&2&lЯ &x&9&F&6&7&1&2&lО &x&9&F&6&7&1&2&lБ&x&9&F&6&7&1&2&lО&x&9&F&6&7&1&2&lС&x&9&F&6&7&1&2&lС&x&9&F&6&7&1&2&lЕ&x&9&F&6&7&1&2&l]"
+    - ""
+    - " &x&9&F&4&0&1&2&l▕ &7Имя: %boss_name%"
+    - " &x&9&F&4&0&1&2&l▕ &7Координаты: &6%x%, %y%, %z%"
+    - " &x&9&F&4&0&1&2&l▕ &7Мир: &a%world%"
+    - " &x&9&F&4&0&1&2&l▕ &7Здоровье: &a%health%/%max_health%"
+  phase-changed: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &fБосс: %boss_name% &fперешёл в фазу: &6%phase%"
+  boss-active: "&x&A&7&E&A&B&1Босс ещё активен!"
+  no-player-data: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DДанные игроков отсутствуют!"
+  player-only: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DЭта команда требует указания игрока!"
+  player-not-found: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DИгрок не найден!"
+  timer: "&7До следующего босса: &x&A&C&5&6&1&1%seconds% &7секунд!"
+  invalid-type: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DУкажите тип: 1-4 или random"
+  invalid-boss-type: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DНеверный тип босса (1-4)"
+  boss-killed-command: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &aБосс был убит."
+  no-boss: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DБосс не найден."
+  player-only-tele: "&cЭта команда только для игроков!"
+  teleported: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &aВы телепортированы к боссу!"
+  unknown-command: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DНеизвестная команда. Используйте /lkboss для списка команд."
+  placeholder-active: "&x&A&7&E&A&B&1Босс активен!"
+  placeholder-soon: "&x&F&3&6&D&6&DСкоро..."
+  placeholder-timer: "&x&B&C&6&E&2&F%hours%ч %minutes%м %seconds%с"
