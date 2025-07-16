@@ -184,6 +184,7 @@ messages:
     - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss top &f- топ урона по текущему боссу"
     - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss leaderboard &f- глобальный топ по боссам"
     - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss stats &f- глобальная статистика персонажа"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss trophies &f- трофеи персонажа"
   reload-success: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&A&7&E&A&B&1Конфигурация успешно перезагружена!"
   info:
     - "&x&9&F&6&7&1&2&l[&x&9&F&6&7&1&2&lИ&x&9&F&6&7&1&2&lН&x&9&F&6&7&1&2&lФ&x&9&F&6&7&1&2&lО&x&9&F&6&7&1&2&lР&x&9&F&6&7&1&2&lМ&x&9&F&6&7&1&2&lА&x&9&F&6&7&1&2&lЦ&x&9&F&6&7&1&2&lИ&x&9&F&6&7&1&2&lЯ &x&9&F&6&7&1&2&lО &x&9&F&6&7&1&2&lБ&x&9&F&6&7&1&2&lО&x&9&F&6&7&1&2&lС&x&9&F&6&7&1&2&lС&x&9&F&6&7&1&2&lЕ&x&9&F&6&7&1&2&l]"
@@ -208,3 +209,35 @@ messages:
   placeholder-active: "&x&A&7&E&A&B&1Босс активен!"
   placeholder-soon: "&x&F&3&6&D&6&DСкоро..."
   placeholder-timer: "&x&B&C&6&E&2&F%hours%ч %minutes%м %seconds%с"
+  no-trophies: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DУ вас пока нет трофеев!"
+
+trophies:
+  killer:
+    name: "&6Истребитель боссов"
+    description: "&7Убить 1 босса"
+    kills: 1
+    
+  mutation:
+    name: "&6Владыка недр"
+    description: "&7Убить 2 боссов"
+    kills: 2
+    
+  fdssf:
+    name: "&6Все боссы убиты!"
+    description: "&7Убить 10 боссов"
+    kills: 10
+    
+  damager:
+    name: "&6Разрушитель"
+    description: "&7Нанести 100 урона боссам"
+    damage: 100
+    
+  hunter:
+    name: "&6Ещё больше урона!"
+    description: "&7Нанести 200 урона боссам"
+    damage: 200
+    
+  ygly:
+    name: "&6Это конец!"
+    description: "&7Нанести 1000 урона боссам"
+    damage: 1000
