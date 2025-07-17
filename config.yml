@@ -37,7 +37,9 @@ bosses:
           - "SPEED:1:99999"
         spawn-minions:
           type: "SKELETON"
+          name: "&5Эндермический миньон"
           count: 2
+          health: 100.0
           interval: 25
       phase3:
         health-range: "0.25-0.5"
@@ -48,7 +50,13 @@ bosses:
       phase4:
         health-range: "0.0-0.25"
         effects:
-          - "SPEED:2:99999"
+          - "REGENERATION:2:600"
+        teleport:
+          interval: 45
+          min-interval: 60
+          max-interval: 120
+          min-distance: 20
+          max-distance: 50
         armor-reduction: 0.5
   2:
     world: world_nether
@@ -66,7 +74,9 @@ bosses:
           - "SPEED:1:99999"
         spawn-minions:
           type: "SKELETON"
+          name: "&4Огненный миньон"
           count: 2
+          health: 100.0
           interval: 25
       phase3:
         health-range: "0.25-0.5"
@@ -77,7 +87,13 @@ bosses:
       phase4:
         health-range: "0.0-0.25"
         effects:
-          - "SPEED:2:99999"
+          - "REGENERATION:2:600"
+        teleport:
+          interval: 45
+          min-interval: 60
+          max-interval: 120
+          min-distance: 20
+          max-distance: 50
         armor-reduction: 0.5
   3:
     world: world
@@ -95,7 +111,9 @@ bosses:
           - "SPEED:1:99999"
         spawn-minions:
           type: "SKELETON"
+          name: "&7Верxовный миньон"
           count: 2
+          health: 100.0
           interval: 25
       phase3:
         health-range: "0.25-0.5"
@@ -106,7 +124,13 @@ bosses:
       phase4:
         health-range: "0.0-0.25"
         effects:
-          - "SPEED:2:99999"
+          - "REGENERATION:2:600"
+        teleport:
+          interval: 45
+          min-interval: 60
+          max-interval: 120
+          min-distance: 20
+          max-distance: 50
         armor-reduction: 0.5
   4:
     world: world
@@ -124,7 +148,9 @@ bosses:
           - "SPEED:1:99999"
         spawn-minions:
           type: "SKELETON"
+          name: "&5Всемогущий миньон"
           count: 2
+          health: 100.0
           interval: 25
       phase3:
         health-range: "0.25-0.5"
@@ -135,7 +161,13 @@ bosses:
       phase4:
         health-range: "0.0-0.25"
         effects:
-          - "SPEED:2:99999"
+          - "REGENERATION:2:600"
+        teleport:
+          interval: 45
+          min-interval: 60
+          max-interval: 120
+          min-distance: 20
+          max-distance: 50
         armor-reduction: 0.5
 
 # Топ по урону
@@ -185,6 +217,7 @@ messages:
     - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss leaderboard &f- глобальный топ по боссам"
     - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss stats &f- глобальная статистика персонажа"
     - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss trophies &f- трофеи персонажа"
+    - "&x&9&F&4&0&1&2&l▕ &x&A&C&5&6&1&1/lkboss menu &f- открыть меню боссов"
   reload-success: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&A&7&E&A&B&1Конфигурация успешно перезагружена!"
   info:
     - "&x&9&F&6&7&1&2&l[&x&9&F&6&7&1&2&lИ&x&9&F&6&7&1&2&lН&x&9&F&6&7&1&2&lФ&x&9&F&6&7&1&2&lО&x&9&F&6&7&1&2&lР&x&9&F&6&7&1&2&lМ&x&9&F&6&7&1&2&lА&x&9&F&6&7&1&2&lЦ&x&9&F&6&7&1&2&lИ&x&9&F&6&7&1&2&lЯ &x&9&F&6&7&1&2&lО &x&9&F&6&7&1&2&lБ&x&9&F&6&7&1&2&lО&x&9&F&6&7&1&2&lС&x&9&F&6&7&1&2&lС&x&9&F&6&7&1&2&lЕ&x&9&F&6&7&1&2&l]"
@@ -212,32 +245,27 @@ messages:
   no-trophies: "&x&E&9&8&8&4&7&lБ&x&D&4&8&0&3&E&lО&x&B&F&7&8&3&4&lС&x&B&3&6&E&2&0&lС&x&A&7&6&4&0&C&l: &x&F&3&6&D&6&DУ вас пока нет трофеев!"
 
 trophies:
-  killer:
-    name: "&6Истребитель боссов"
-    description: "&7Убить 1 босса"
-    kills: 1
-    
-  mutation:
-    name: "&6Владыка недр"
-    description: "&7Убить 2 боссов"
-    kills: 2
-    
-  fdssf:
-    name: "&6Все боссы убиты!"
-    description: "&7Убить 10 боссов"
-    kills: 10
-    
-  damager:
-    name: "&6Разрушитель"
-    description: "&7Нанести 100 урона боссам"
-    damage: 100
-    
-  hunter:
-    name: "&6Ещё больше урона!"
-    description: "&7Нанести 200 урона боссам"
-    damage: 200
-    
-  ygly:
-    name: "&6Это конец!"
+  trophy1:
+    name: "&6Boss Slayer"
+    description: "&7Убить 5 боссов"
+    kills: 5
+
+  trophy2:
+    name: "&6Damage Dealer"
     description: "&7Нанести 1000 урона боссам"
     damage: 1000
+
+  trophy3:
+    name: "&6Minion Hunter"
+    description: "&7Убить 5 миньонов босса"
+    minions-killed: 5
+
+  trophy4:
+    name: "&6Curse Survivor"
+    description: "&7Пережить 10 проклятий босса"
+    curses-survived: 10
+
+  trophy5:
+    name: "&6Veteran"
+    description: "&7Участвовать в 20 битвах с боссами"
+    battles: 20
